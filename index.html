@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-5">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4">Advanced Data Analytics Dashboard</h1>
+
+        <!-- Metrics Selection -->
+        <div class="mb-4">
+            <label class="block text-gray-700">Select Metrics:</label>
+            <select id="metrics" multiple class="border rounded p-2 w-full">
+                <option value="movingAvg">Moving Average</option>
+                <option value="volatility">Volatility</option>
+                <option value="rsi">RSI</option>
+            </select>
+            <button id="updateMetrics" class="mt-2 bg-blue-500 text-white p-2 rounded">Update Chart</button>
+        </div>
+
+        <!-- Chart Container -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <canvas id="financeChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

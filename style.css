@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+select {
+    height: 100px;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
